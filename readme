@@ -1,0 +1,5 @@
+This project is a Firebase hosting app for the ChargeRocket sites main landing page. The stack consists of:
+
+1. Firebase Functions
+2. Firebase FireStore
+3. Calls to SendGrid to send emails
