@@ -1,0 +1,15 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "description": "This project is a Firebase hosting app for the ChargeRocket sites main landing page. The stack consists of:",
+  "main": "public/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://gary@chargerocket.tech@source.developers.google.com:2022/p/chargerocket-f9f8f/r/Main-Site-Landing-Page"
+  },
+  "author": "Gary Suyemoto",
+  "license": "ISC"
+}

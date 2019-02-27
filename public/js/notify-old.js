@@ -4,6 +4,19 @@
  Licensed under The MIT License.
 */
 (function(e) {
+	var config = {
+          apiKey: "AIzaSyCtl7fQc5_74VEFO_MVX1MNEiyRr75BfnA",
+          authDomain: "chargerocket-f9f8f.firebaseapp.com",
+          databaseURL: "https://chargerocket-f9f8f.firebaseio.com",
+          projectId: "chargerocket-f9f8f",
+          storageBucket: "chargerocket-f9f8f.appspot.com",
+          messagingSenderId: "940999677088"
+        };
+        firebase.initializeApp(config);
+
+	const firestore = firebase.firestore();
+	const docRef = firestore.collection("newletter-users");
+
     e.fn.notifyMe = function(t) {
         var r = e(this);
         var i = e(this).find("input[name=email]");

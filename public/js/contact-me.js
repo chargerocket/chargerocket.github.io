@@ -9,7 +9,7 @@ $(document).ready(function() {
         var user_subject    = $('input[name=subject]').val();
         var user_message    = $('textarea[name=message]').val();
        
-        // Datadata to be sent to server
+        // Data to be sent to server
         post_data = {'userName':user_name, 'userEmail':user_email, 'userSubject':user_subject, 'userMessage':user_message};
        
         // Ajax post data to server
