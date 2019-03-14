@@ -4,25 +4,6 @@
  Licensed under The MIT License.
 */
 (function(e) {
-    let config = {
-        apiKey: "AIzaSyCtl7fQc5_74VEFO_MVX1MNEiyRr75BfnA",
-        authDomain: "chargerocket-f9f8f.firebaseapp.com",
-        databaseURL: "https://chargerocket-f9f8f.firebaseio.com",
-        projectId: "chargerocket-f9f8f",
-        storageBucket: "chargerocket-f9f8f.appspot.com",
-        messagingSenderId: "940999677088"
-    };
-
-    let actionCodeSettings = {
-        // URL you want to redirect back to. The domain (www.example.com) for this
-        // URL must be whitelisted in the Firebase Console.
-        url: 'https://chargerocket.tech/newsletter-thanks',
-        // This must be true.
-        handleCodeInApp: true
-    };
-
-    firebase.initializeApp(config);
-
     e.fn.notifyMe = function(t) {
         let r = e(this);
         let i = e(this).find("input[name=email]");
