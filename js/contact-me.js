@@ -9,20 +9,20 @@ $(document).ready(function() {
         var user_subject    = $('input[name=subject]').val();
         var user_message    = $('textarea[name=message]').val();
        
-        // Data to be sent to server
+        // Datadata to be sent to server
         post_data = {'userName':user_name, 'userEmail':user_email, 'userSubject':user_subject, 'userMessage':user_message};
        
         // Ajax post data to server
-        $.post('php/contact-me.php', post_data, function(response){  
+        $.post('/contact-us', post_data, function(response){  
            
             // Load json data from server and output message    
             if(response.type == 'error') {
 
-                output = '<div class="error-message"><p>'+response.text+'</p></div>';
+                output = '<div class="error-message"><p>Oops! We had some trouble sending that message. Please try again later.</p></div>';
                 
             } else {
            
-                output = '<div class="success-message"><p>'+response.text+'</p></div>';
+                output = '<div class="success-message"><p>Your message was sent and you should expect a prompt reply!</p></div>';
                
                 // After, all the fields are reseted
                 $('#contact-form input').val('');
