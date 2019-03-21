@@ -266,7 +266,7 @@ $(document).ready(function(){
     /* 5. Newsletter ........................ */
     /* ------------------------------------- */
 
-    $("#notifyMe").notifyMe();
+    // $("#notifyMe").notifyMe();
 
     (function() {
 
